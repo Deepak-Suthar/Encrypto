@@ -25,8 +25,8 @@ public class AESencryption {
 		{
 			KeyStore keyStore = KeyStore.getInstance("JCEKS");
 			FileInputStream stream = new FileInputStream("mykeystore.jks");
-			keyStore.load(stream , "Deepak".toCharArray());
-			Key key = keyStore.getKey("mykey", "Deepak".toCharArray());
+			keyStore.load(stream , "****".toCharArray());
+			Key key = keyStore.getKey("mykey", "****".toCharArray());
 			
 			String input =file;
 			String output = "Output.txt";
